@@ -1,0 +1,49 @@
+.section-points {
+  margin-bottom: 108px;
+}
+
+.section-points__heading {
+  max-width: 700px;
+  margin-bottom: 70px;
+}
+
+.section-points__list {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 30px;
+  row-gap: 60px;
+  max-width: 1262px;
+}
+
+@media (min-width: 480px) {
+  .section-points__list {
+    grid-template-columns: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-points__list {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.section-points__item {
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  row-gap: 15px;
+  max-width: 616px;
+}
+
+.section-points__item-heading {
+  margin: 0;
+}
+
+.section-points__item-text {
+  margin: 0;
+}
+
+.section-points__item-button {
+  max-width: 130px;
+  align-self: end;
+  margin-top: 1rem;
+}

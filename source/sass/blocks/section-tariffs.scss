@@ -1,0 +1,249 @@
+.section-tariffs {
+  display: grid;
+}
+
+.section-tariffs__header {
+  position: sticky;
+  top: 60px;
+
+  display: grid;
+
+  background-color: var(--background-white);
+
+  z-index: 2;
+}
+
+@media (min-width: 480px) {
+  .section-tariffs__header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-tariffs__heading {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: var(--accent-color);
+}
+
+@media (min-width: 480px) {
+  .section-tariffs__heading {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+
+.section-tariffs__text {
+  max-width: 540px;
+  margin-top: 50px;
+}
+
+@media (min-width: 480px) {
+  .section-tariffs__text {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+.section-tariffs__pricing-images-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 480px) {
+  .section-tariffs__pricing-images-list {
+    grid-row: span 2;
+    align-self: end;
+  }
+}
+
+.section-tariffs__pricing-images-item {
+  position: relative;
+
+  display: grid;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.section-tariffs__pricing-images-item::before {
+  position: absolute;
+  top: 110px;
+  right: 0;
+  left: 0;
+
+  width: min-content;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 50px;
+  text-transform: lowercase;
+  letter-spacing: -0.05em;
+  color: var(--background-light-grey);
+
+  z-index: -1;
+}
+
+.section-tariffs__pricing-images-item--business::before {
+  content: "Бизнес";
+}
+
+.section-tariffs__pricing-images-item--expert::before {
+  content: "Эксперт";
+}
+
+.section-tariffs__pricing-images-item--premium::before {
+  content: "Премиум";
+}
+
+.section-tariffs__list {
+  display: grid;
+  row-gap: 15px;
+
+  counter-reset: faq-list;
+}
+
+.section-tariffs__item {
+  position: relative;
+}
+
+.section-tariffs__item::before {
+  position: absolute;
+  top: 18px;
+  left: -7px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 135px;
+  line-height: 50px;
+  letter-spacing: -0.05em;
+  color: var(--background-light-grey);
+
+  counter-increment: faq-list;
+  content: counter(faq-list, upper-latin);
+
+  z-index: -1;
+}
+
+.section-tariffs__item:first-of-type::before {
+  left: 2px;
+}
+
+.section-tariffs__item:nth-of-type(3)::before {
+  left: -4px;
+}
+
+.section-tariffs__item:nth-of-type(7)::before {
+  left: -4px;
+}
+
+.section-tariffs__item-heading {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  max-width: 50%;
+  margin: 0;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: var(--accent-color);
+
+  z-index: 1;
+}
+
+.section-tariffs__item-table {
+  display: none;
+
+  border-collapse: collapse;
+}
+
+.section-tariffs__item-table td {
+  padding-top: 24px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+
+.section-tariffs__item-table td:first-of-type {
+  width: 50%;
+}
+
+.section-tariffs__item-table td:not(:first-of-type) {
+  text-align: center;
+}
+
+.section-tariffs__item-table tr:nth-of-type(2n - 1) {
+  background-color: var(--background-light-grey);
+}
+
+.section-tariffs__item-button {
+  padding: 0;
+  border: none;
+  border-top: 1px solid var(--basic-purple);
+  width: 100%;
+
+  background-color: transparent;
+}
+
+.section-tariffs__item-button-label {
+  display: none;
+
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-purple);
+}
+
+.section-tariffs__item--active
+.section-tariffs__item-table {
+  display: initial;
+}
+
+.section-tariffs__item--active
+.section-tariffs__item-button-icon {
+  display: none;
+}
+
+.section-tariffs__item--active
+.section-tariffs__item-button-label {
+  display: initial;
+}
+
+.section-tariffs__footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 60px;
+  margin-bottom: 130px;
+}
+
+.section-tariffs__footer-note {
+  max-width: 540px;
+}
+
+.section-tariffs__footer-price-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-items: center;
+}
+
+.section-tariffs__footer-price-item {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: var(--accent-color);
+}

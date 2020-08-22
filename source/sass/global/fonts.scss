@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: local("Yanone Kaffeesatz"),
+  url("../fonts/yanone-kaffeesatz-regular.woff2") format("woff2"),
+  url("../fonts/yanone-kaffeesatz-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: local("Yanone Kaffeesatz Light"),
+  url("../fonts/yanone-kaffeesatz-light.woff2") format("woff2"),
+  url("../fonts/yanone-kaffeesatz-light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: local("Yanone Kaffeesatz Bold"),
+  url("../fonts/yanone-kaffeesatz-bold.woff2") format("woff2"),
+  url("../fonts/yanone-kaffeesatz-bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+  url("../fonts/montserrat-regular.woff2") format("woff2"),
+  url("../fonts/montserrat-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"),
+  url("../fonts/montserrat-bold.woff2") format("woff2"),
+  url("../fonts/montserrat-bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Black"),
+  url("../fonts/montserrat-black.woff2") format("woff2"),
+  url("../fonts/montserrat-black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+}

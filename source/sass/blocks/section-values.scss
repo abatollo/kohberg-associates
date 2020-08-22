@@ -1,0 +1,146 @@
+.section-values {
+  position: relative;
+
+  background-color: var(--background-light-grey);
+
+  z-index: 1;
+}
+
+.section-values::before {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  display: flex;
+  width: max-content;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: var(--background-white);
+  text-transform: lowercase;
+
+  content: "Наши ценности";
+
+  z-index: -1;
+}
+
+.section-values__wrapper {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .section-values__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 130px;
+  }
+}
+
+.section-values__heading {
+  max-width: 1000px;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+
+  letter-spacing: -0.015em;
+
+  color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .section-values__heading {
+    grid-column: span 2;
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.section-values__main {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.section-values__main p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-values__subheading {
+  margin-top: 50px;
+  margin-bottom: 37px;
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}
+
+.section-values__aside {
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+
+  letter-spacing: 0.02em;
+
+  color: var(--background-white);
+}
+
+.section-values__aside {
+  background-color: var(--solid-blue);
+}
+
+@media (min-width: 768px) {
+  .section-values__aside {
+    display: grid;
+
+    background-image: linear-gradient(to bottom, transparent 30%, var(--solid-blue) 30%, var(--solid-blue) 100%);
+    box-shadow: 7vw 0 var(--solid-blue);
+  }
+}
+
+.section-values__aside-image {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .section-values__aside-image {
+    position: relative;
+    right: -7vw;
+
+    justify-self: end;
+  }
+}
+
+.section-values__aside-text {
+  margin: 30px;
+
+  @media (min-width: 768px) {
+    margin-right: 320px;
+  }
+}
+
+.section-values__aside-text:last-of-type {
+  margin-top: 0;
+}

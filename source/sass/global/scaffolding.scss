@@ -1,0 +1,70 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+a:active,
+button:active {
+  opacity: 0.5;
+}
+
+button {
+  outline: none;
+}
+
+.generic-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 130px;
+  min-height: 40px;
+  padding-top: 13px;
+  padding-right: 47px;
+  padding-bottom: 13px;
+  padding-left: 47px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--background-white);
+  text-align: center;
+
+  background-color: #61064C;
+}

@@ -1,0 +1,40 @@
+.modal-point__wrapper {
+  position: relative;
+
+  width: 805px;
+  padding-top: 65px;
+  padding-right: 160px;
+  padding-left: 160px;
+  padding-bottom: 80px;
+
+  background-color: var(--background-white);
+}
+
+.modal-point__icon {
+  position: absolute;
+  top: -25px;
+  left: -44px;
+}
+
+.modal-point__heading {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: var(--accent-color);
+}
+
+.modal-point p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(0, 0, 0, 0.8);
+}

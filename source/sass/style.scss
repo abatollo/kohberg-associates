@@ -1,0 +1,23 @@
+@import 'global/normalize.scss';
+@import 'global/fonts.scss';
+@import 'global/mixins.scss';
+@import 'global/visually-hidden.scss';
+@import 'global/scaffolding.scss';
+@import 'global/variables.scss';
+
+@import 'blocks/header-main.scss';
+@import 'blocks/section-hero.scss';
+@import 'blocks/section-points.scss';
+@import 'blocks/section-cases.scss';
+@import 'blocks/section-feedback.scss';
+@import 'blocks/section-features.scss';
+@import 'blocks/section-values.scss';
+@import 'blocks/footer-main.scss';
+@import 'blocks/footer-menu.scss';
+@import 'blocks/footer-social.scss';
+@import 'blocks/modal.scss';
+@import 'blocks/modal-point.scss';
+@import 'blocks/modal-feature.scss';
+@import 'blocks/section-news.scss';
+@import 'blocks/section-faq.scss';
+@import 'blocks/section-tariffs.scss';

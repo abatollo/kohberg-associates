@@ -1,0 +1,140 @@
+.section-faq {
+  display: grid;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 480px) {
+  .section-faq {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section-faq__heading {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: var(--accent-color);
+}
+
+@media (min-width: 480px) {
+  .section-faq__heading {
+    grid-row: 2;
+  }
+}
+
+.section-faq__text {
+  max-width: 540px;
+  margin-top: 50px;
+}
+
+@media (min-width: 480px) {
+  .section-faq__text {
+    grid-row: 1;
+  }
+}
+
+.section-faq__image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-self: center;
+}
+
+@media (min-width: 480px) {
+  .section-faq__image {
+    margin: 0;
+    grid-column: 2;
+    grid-row: span 2;
+  }
+}
+
+.section-faq__description-list {
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  .section-faq__description-list {
+    grid-column: span 2;
+  }
+}
+
+.section-faq__description-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.section-faq__description-item--active {
+  background-image: url('../img/faq-icon.svg');
+  background-repeat: no-repeat;
+}
+
+.section-faq__description-item--active
+.section-faq__description-item-details {
+  display: block;
+}
+
+.section-faq__description-item-term {
+  padding-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: var(--accent-color);
+}
+
+@media (min-width: 480px) {
+  .section-faq__description-item-term {
+    width: 50%;
+  }
+}
+
+.section-faq__description-item-details {
+  display: none;
+  margin-left: 0;
+
+  color: #000000;
+}
+
+@media (min-width: 480px) {
+  .section-faq__description-item-details {
+    width: 50%;
+  }
+}
+
+.section-faq__description-item-details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-faq__description-item-button {
+  padding: 0;
+  border: none;
+  border-top: 1px solid var(--basic-purple);
+  width: 100%;
+
+  background-color: transparent;
+}
+
+.section-faq__description-item-button-label {
+  display: none;
+
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-purple);
+}
+
+.section-faq__description-item--active
+.section-faq__description-item-button-icon {
+  display: none;
+}
+
+.section-faq__description-item--active
+.section-faq__description-item-button-label {
+  display: initial;
+}

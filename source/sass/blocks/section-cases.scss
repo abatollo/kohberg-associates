@@ -1,0 +1,217 @@
+.section-cases {
+  position: relative;
+
+  background-color: var(--background-light-grey);
+
+  z-index: 1;
+}
+
+.section-cases::before {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  width: max-content;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10vw;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: var(--background-white);
+
+  content: "GDPR в России";
+
+  z-index: -1;
+}
+
+.section-cases__container {
+  max-width: 1680px;
+}
+
+.section-cases__wrapper {
+  position: relative;
+
+  display: none;
+  row-gap: 20px;
+
+  padding-top: 60px;
+  padding-bottom: 85px;
+}
+
+@media (min-width: 1680px) {
+  .section-cases__wrapper {
+    grid-template-columns: 2fr 1fr;
+    column-gap: 60px;
+    row-gap: 70px;
+  }
+}
+
+.section-cases__wrapper--shown {
+  display: grid;
+}
+
+.section-cases__heading {
+  margin: 0;
+
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 50px;
+  color: var(--accent-color);
+}
+
+@media (min-width: 1680px) {
+  .section-cases__heading {
+    grid-column: span 2;
+  }
+}
+
+.section-cases__list {
+  display: grid;
+  row-gap: 30px;
+}
+
+.section-cases__item {
+  display: grid;
+  row-gap: 10px;
+}
+
+@media (min-width: 1680px) {
+  .section-cases__item {
+    grid-template-columns: 100px auto;
+    column-gap: 30px;
+  }
+
+  .section-cases__item:nth-of-type(2n) {
+    position: relative;
+    left: 130px;
+  }
+}
+
+.section-cases__item-image {
+  grid-row: span 2;
+}
+
+.section-cases__item-heading {
+  margin: 0;
+
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}
+
+.section-cases__item-text {
+  margin: 0;
+  max-width: 615px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.section-cases__solution {
+  display: grid;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+
+  background-color: var(--solid-blue);
+}
+
+@media (min-width: 768) {
+  .section-cases__solution {
+    box-shadow: 7vw 0 var(--solid-blue);
+  }
+}
+
+.section-cases__solution-heading {
+  margin: 0;
+  max-width: 320px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+
+  letter-spacing: -0.02em;
+
+  color: var(--background-white);
+}
+
+.section-cases__solution-text {
+  font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 320px;
+  font-weight: 300;
+
+  letter-spacing: 0.02em;
+
+  color: var(--background-white);
+}
+
+.section-cases__button {
+  position: absolute;
+  top: 50%;
+
+  padding-top: 14px;
+  padding-right: 8px;
+  padding-bottom: 14px;
+  padding-left: 8px;
+  border: none;
+  width: 7vw;
+
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-purple);
+
+  background-color: var(--background-white);
+  cursor: pointer;
+}
+
+.section-cases__button-text {
+  display: none;
+
+  @media (min-width: 1680px) {
+    display: initial;
+  }
+}
+
+.section-cases__button-icon {
+  width: 15px;
+  height: 15px;
+
+  @media (min-width: 1680px) {
+    display: none;
+  }
+}
+
+.section-cases__button--prev {
+  left: 0;
+}
+
+.section-cases__button--next {
+  right: 0;
+}

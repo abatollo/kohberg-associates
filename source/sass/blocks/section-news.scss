@@ -1,0 +1,84 @@
+.section-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 30px;
+  row-gap: 50px;
+  min-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+@media (min-width: 480px) {
+  .section-news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.section-news__heading {
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 50px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--accent-color);
+}
+
+@media (min-width: 480px) {
+  .section-news__heading {
+    grid-column: span 3;
+  }
+}
+
+.section-news__item {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  background-color: var(--background-light-grey);
+}
+
+.section-news__item-heading {
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+
+  letter-spacing: -0.02em;
+
+  color: var(--accent-color);
+}
+
+.section-news__item-text {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.section-news__item-link {
+  display: block;
+
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-purple);
+}

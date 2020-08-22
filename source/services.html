@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kohberg Associates</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+<header class="header-main">
+  <nav class="header-main__nav center">
+    <button class="header-main__menu-button burger-button">
+      <svg width="30" height="30" viewBox="0 0 100 100">
+        <path class="burger-button__line burger-button__line--long" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="burger-button__line burger-button__line--short" d="M 20,50 H 80" />
+        <path class="burger-button__line burger-button__line--long" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+    <a class="header-main__link" href="index.html">
+      <img class="header-main__image-desktop" loading="lazy" src="img/logo-big.svg" width="160" height="61" alt="Логотип Kohberg Associates">
+      <img class="header-main__image-mobile" loading="lazy" src="img/logo-small.svg" width="40" height="45" alt="Логотип Kohberg Associates">
+    </a>
+    <ul class="header-main__menu main-menu list-reset">
+      <li class="main-menu__item"><a class="main-menu__link" href="services.html">Услуги</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="services.html">Тарифы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="faq.html">FAQ</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="news.html">Новости</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Документы</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">Субъектам данных</a></li>
+    </ul>
+    <a class="header-main__login-button generic-button" href="#">Вход</a>
+  </nav>
+</header>
+
+<main>
+
+    <section class="section-tariffs container center">
+      <header class="section-tariffs__header">
+        <h1 class="section-tariffs__heading">Услуги и тарифы</h1>
+        <p class="section-tariffs__text">
+            Представительство вашей компании в Евросоюзе для защиты прав резидентов ЕС, установленных регламентом GDPR, и ваших интересов
+        </p>
+        <ul class="section-tariffs__pricing-images-list list-reset">
+          <li class="section-tariffs__pricing-images-item section-tariffs__pricing-images-item--business">
+            <img class="section-tariffs__pricing-images-item-image" loading="lazy" src="img/pricing-icon-1.svg" alt="" width="120" height="138">
+          </li>
+          <li class="section-tariffs__pricing-images-item section-tariffs__pricing-images-item--expert">
+            <img class="section-tariffs__pricing-images-item-image" loading="lazy" src="img/pricing-icon-2.svg" alt="" width="142" height="145">
+          </li>
+          <li class="section-tariffs__pricing-images-item section-tariffs__pricing-images-item--premium">
+            <img class="section-tariffs__pricing-images-item-image" loading="lazy" src="img/pricing-icon-3.svg" alt="" width="189" height="138">
+          </li>
+        </ul>
+      </header>
+      <ul class="section-tariffs__list list-reset">
+          <li class="section-tariffs__item section-tariffs__item--active">
+              <h2 class="section-tariffs__item-heading">
+                  Взаимодействие с субъектами данных, обработчиками/получателями данных, третьими лицами
+              </h2>
+              <table class="section-tariffs__item-table">
+                  <tbody>
+                      <tr>
+                          <td>
+                              Разработка уведомлений для информирования субъектов о сборе персональных данных, а также о законных основаниях, целях и методах обработки, хранения и удаления данных
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Разработка уведомлений о трансграничной передаче данных
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Работа с запросами субъектов, связанными с обеспечением их прав (на доступ к информации о сборе и хранении их данных, на исправление данных, на перенос данных, на прекращение обработки данных и т. д.) в установленные регламентом GDPR сроки
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Информационная поддержка субъектов данных по вопросам обработки их персональных данных
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Информационная и консультационная поддержка обработчиков (субпроцессоров), которым клиент передаёт данные для обработки или хранения, проверка их соответствия требованиям GDPR
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              Взаимодействие с получателями данных и третьими лицами на территории ЕС
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                          <td>
+                              <img loading="lazy" src="img/check.svg" width="18" height="14">
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <button class="section-tariffs__item-button" type="button">
+                <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+                <div class="section-tariffs__item-button-label">Свернуть</div>
+              </button>
+          </li>
+
+          <li class="section-tariffs__item section-tariffs__item--active">
+            <h2 class="section-tariffs__item-heading">
+              Ведение реестра операций обработки персональных данных
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+
+          <li class="section-tariffs__item">
+            <h2 class="section-tariffs__item-heading">
+              Представление и защита интересов клиента в надзорных органах, взаимодействие с надзорными органами
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+
+          <li class="section-tariffs__item">
+            <h2 class="section-tariffs__item-heading">
+              Организация трансграничной передачи персональных данных резидентов ЕС в соответствии с GDPR
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+
+          <li class="section-tariffs__item">
+            <h2 class="section-tariffs__item-heading">
+              Защита интересов клиента в административных и судебных   инстанциях ЕС
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+
+          <li class="section-tariffs__item">
+            <h2 class="section-tariffs__item-heading">
+              Аудит бизнес-процессов клиента, разработка правил работы клиента (контроллера данных) и представителя в части обработки персональных данных резидентов ЕС
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+
+          <li class="section-tariffs__item">
+            <h2 class="section-tariffs__item-heading">
+              Аудит внутренней правовой базы клиента для приведения системы защиты персональных данных в соответствие с требованиями регламента GDPR и законодательства ЕС
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+
+          <li class="section-tariffs__item">
+            <h2 class="section-tariffs__item-heading">
+              Аудит информационного и нормативно-технического обеспечения клиента для приведения системы защиты персональных данных в соответствие с требованиями регламента GDPR и законодательства ЕС
+            </h2>
+            <table class="section-tariffs__item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                          Консультирование клиента по вопросам ведения реестра операций обработки персональных данных на территории ЕС (реестр клиент ведёт самостоятельно)
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Ведение реестра операций обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Подготовка отчетности по реестру для надзорных и контролирующих органов ЕС
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          Предоставление аудиторам, надзорным органам ЕС физического и сетевого доступа к реестру обработки персональных данных
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                        <td>
+                            <img loading="lazy" src="img/check.svg" width="18" height="14">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="section-tariffs__item-button" type="button">
+              <img class="section-tariffs__item-button-icon" loading="lazy" src="img/icon-expand.svg" width="12" height="11">
+              <div class="section-tariffs__item-button-label">Свернуть</div>
+            </button>
+          </li>
+      </ul>
+      <footer class="section-tariffs__footer">
+        <p class="section-tariffs__footer-note">
+          Стоимость обслуживания в месяц указана в Евро по курсу ЦБ РФ на 5 число каждого месяца обслуживания. Минимальный срок действия договора на услуги GDPR представительства - 6 месяцев.
+        </p>
+        <ul class="section-tariffs__footer-price-list list-reset">
+          <li class="section-tariffs__footer-price-item">€1990</li>
+          <li class="section-tariffs__footer-price-item">€2400</li>
+          <li class="section-tariffs__footer-price-item">€3100</li>
+        </ul>
+      </footer>
+    </section>
+
+    <section class="section-feedback__wrapper">
+        <div class="section-feedback section-feedback--reverse container center">
+            <h2 class="section-feedback__heading">Задайте вопрос по GDPR юристу Kohberg Associates</h2>
+            <form class="section-feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="section-feedback__name" type="text" name="name" id="name" placeholder="Как вас зовут?">
+                <input class="section-feedback__contacts" type="text" name="email" id="email" autocomplete="email" placeholder="Как с вами связаться?" required>
+                <textarea class="section-feedback__message" name="message" id="message" cols="30" rows="3" placeholder="Ваш вопрос"></textarea>
+                <button class="section-feedback__button generic-button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer-main">
+  <div class="footer-menu center">
+    <ul class="footer-menu-left list-reset">
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="news.html">Новости</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="faq.html">FAQ</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#">Документы</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#">Субъектам данных</a>
+      </li>
+    </ul>
+    <ul class="footer-menu-right list-reset">
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#">Политика обработки данных</a>
+      </li>
+      <li class="footer-menu__item">
+        <a class="footer-menu__link" href="#">Войти в личный кабинет</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="footer-social list-reset center">
+    <li class="footer-social__item">
+      <a class="footer-social__link" href="#">
+        <img loading="lazy" src="img/icon-social-facebook.svg" width="14" height="23">
+      </a>
+    </li>
+    <li class="footer-social__item">
+      <a class="footer-social__link" href="#">
+        <img loading="lazy" src="img/icon-social-twitter.svg" width="22" height="22">
+      </a>
+    </li>
+    <li class="footer-social__item">
+      <a class="footer-social__link" href="#">
+        <img loading="lazy" src="img/icon-social-instagram.svg" width="23" height="26">
+      </a>
+    </li>
+    <li class="footer-social__item">
+      <a class="footer-social__link" href="#">
+        <img loading="lazy" src="img/icon-social-youtube.svg" width="25" height="23">
+      </a>
+    </li>
+  </ul>
+
+  <a class="footer-main__link center" href="index.html">
+      <img class="footer-main__image" loading="lazy" src="img/logo-big.svg" alt="" width="163" height="62">
+  </a>
+
+  <address class="footer-address center">
+      <a href="https://www.google.com/maps/place/Palioni%C5%B3+g.+19,+Vilnius">
+      UAB «Kohbergas LT» Lietuvos Respublikos,
+      Vilniaus, m. Palionių g.19
+      </a>
+      Phone: <a href="tel:8001233456">800 123 3456</a><br>
+      Fax: 800 123 3456<br>
+      Email: <a href="mailto:info@dprconsult.net">info@dprconsult.net</a><br>
+  </address>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
