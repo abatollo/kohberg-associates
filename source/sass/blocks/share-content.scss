@@ -1,0 +1,21 @@
+.share-content {
+  display: grid;
+  row-gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: var(--background-light-grey);
+  border-radius: 10px;
+}
+
+.share-content__label {
+  justify-self: center;
+
+  font-size: 2rem;
+}
+
+.share-content__list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}

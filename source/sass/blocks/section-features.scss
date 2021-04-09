@@ -93,6 +93,7 @@
 .section-features__pricing-list {
   display: grid;
   margin-top: 91px;
+  grid-row-gap: 20px;
 }
 
 @media (min-width: 768px) {

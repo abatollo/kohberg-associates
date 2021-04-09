@@ -1,22 +1,22 @@
-const sync = require('browser-sync').create();
+const sync = require("browser-sync").create();
 
-const gulp = require('gulp');
-const del = require('del');
-const autoprefixer = require('autoprefixer');
+const gulp = require("gulp");
+const del = require("del");
+const autoprefixer = require("autoprefixer");
 
-const sass = require('gulp-sass');
-const svgstore = require('gulp-svgstore');
-const rename = require('gulp-rename');
-const posthtml = require('gulp-posthtml');
-const include = require('posthtml-include');
-const plumber = require('gulp-plumber');
+const sass = require("gulp-sass");
+const svgstore = require("gulp-svgstore");
+const rename = require("gulp-rename");
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
+const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const postcss = require("gulp-postcss");
 const csso = require("gulp-csso");
 const imagemin = require("gulp-imagemin");
-const imageminJpegtran = require('imagemin-jpegtran');
-const imageminSvgo = require('imagemin-svgo');
-const gulpWebp = require('gulp-webp');
+const imageminJpegtran = require("imagemin-jpegtran");
+const imageminSvgo = require("imagemin-svgo");
+const gulpWebp = require("gulp-webp");
 const terser = require("gulp-terser");
 
 // Запускаем сервер: показываем файлы из папки build, со включённым CORS,
@@ -46,7 +46,7 @@ const reload = (done) => {
 // и перезапускаем сервер
 
 const watcher = () => {
-  gulp.watch(`source/sass/**/*.sass`, gulp.series(style, reload));
+  gulp.watch(`source/sass/**/*.scss`, gulp.series(style, reload));
   gulp.watch(`source/*.html`, gulp.series(copy, html, reload));
   gulp.watch(`source/js/script.js`, gulp.series(scripts, reload));
 };
@@ -85,13 +85,13 @@ const style = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(csso())
-    .pipe(rename({
-      suffix: `.min`
-    }))
+    // .pipe(postcss([autoprefixer()]))
+    // .pipe(csso())
+    .pipe(
+      rename({
+        suffix: `.min`,
+      })
+    )
     .pipe(sourcemap.write(`.`))
     .pipe(gulp.dest(`build/css`))
     .pipe(sync.stream());
@@ -101,11 +101,14 @@ const style = () => {
 // добавляем суффикс min и записываем в папку build/js
 
 const scripts = () => {
-  return gulp.src("source/js/script.js")
+  return gulp
+    .src("source/js/script.js")
     .pipe(terser())
-    .pipe(rename({
-      suffix: `.min`
-    }))
+    .pipe(
+      rename({
+        suffix: `.min`,
+      })
+    )
     .pipe(gulp.dest(`build/js`))
     .pipe(sync.stream());
 };
@@ -128,9 +131,7 @@ exports.sprite = sprite;
 const html = () => {
   return gulp
     .src(`source/*.html`)
-    .pipe(posthtml([
-      include()
-    ]))
+    .pipe(posthtml([include()]))
     .pipe(gulp.dest(`build`));
 };
 
@@ -140,16 +141,17 @@ exports.html = html;
 // все JPG наделяем прогрессивным методом, все SVG чистим, оставляя ViewBox
 
 const images = () => {
-  return gulp.src(`source/img/**/*.{png,jpg,svg}`)
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 7}),
-      imageminJpegtran({progressive: true}),
-      imageminSvgo({
-        plugins: [
-            {removeViewBox: false}
-        ]
-      })
-    ]))
+  return gulp
+    .src(`source/img/**/*.{png,jpg,svg}`)
+    .pipe(
+      imagemin([
+        imagemin.optipng({ optimizationLevel: 7 }),
+        imageminJpegtran({ progressive: true }),
+        imageminSvgo({
+          plugins: [{ removeViewBox: false }],
+        }),
+      ])
+    )
     .pipe(gulp.dest(`source/img`));
 };
 
@@ -170,23 +172,20 @@ exports.webp = webp;
 // Собираем проект: удаляем папку build, копируем файлы, обрабатываем стили
 // сжимаем скрипты и обрабатываем HTML
 
-const build = (done) => gulp.series (
-  clean,
-  copy,
-  style,
-  scripts,
-  // html,
-)(done);
+const build = (done) =>
+  gulp.series(
+    clean,
+    copy,
+    style,
+    scripts
+    // html,
+  )(done);
 
 exports.build = build;
 
 // Запускаем проект: собираем файлы, стартуем сервер
 // и отслеживаем изменения в файлах
 
-const start = () => gulp.series (
-  build,
-  server,
-  watcher
-)();
+const start = () => gulp.series(build, server, watcher)();
 
 exports.start = start;

@@ -1,0 +1,22 @@
+.page-single {
+  margin-top: 30px;
+}
+
+.page-single__heading {
+  margin-bottom: 20px;
+}
+
+.page-single h2 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--accent-color);
+  letter-spacing: -0.02em;
+}
+
+.page-single figcaption {
+  text-align: center;
+  opacity: 0.6;
+}
